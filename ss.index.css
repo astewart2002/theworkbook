@@ -1,0 +1,328 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+@import url('../fonts/Sentient-Variable.woff2');
+@import url('../fonts/Switzer-Variable.woff2');
+@import url('../fonts/Gambarino-Regular.woff2');
+
+.montserrat-me> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* universal styling */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* cursor:url('images/cursor.5ff4b071.svg'), pointer; */
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+
+:root {
+  --background-color: white;
+  --text-color: black;
+  --highlight-color: blue;
+  --gridline-color: grey;
+}
+
+html {
+  font-family: Montserrat;
+  font-size: 1em;
+  text-decoration: none;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.25;
+}
+
+body {
+  background-size: calc(100w / 12) 1px;
+  background-image: linear-gradient(to right, var(--gridline-color) 1px, transparent 1px);
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  min-height: 100vh;
+}
+
+.home-header {
+  grid-column: span 2;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 25vw;
+
+
+  padding: 2rem;
+
+  background-color: rgb(247, 247, 247);
+}
+
+
+.home-nav {
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  font-size: max(16px, 0.75rem);
+  font-style: italic;
+  color: black;
+}
+
+
+.nav-title {
+  font-size: 2.5em;
+  font-family: Sentient-Variable;
+}
+
+
+.home-section {
+  grid-column: span 10;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  background-color: white;
+  align-items:center;
+  padding-right: 8%;
+}
+
+.home-graphic-1 {
+  max-width: 70%;
+}
+
+.made-with-love:hover {
+  font-weight: bold;
+}
+
+a:visited { 
+  text-decoration: none; 
+  color: black; 
+ }
+ 
+a:hover {
+  color: red;
+}
+
+svg.trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* width: 400px;
+  height: 400px; */
+}
+
+svg.trail path {
+  fill: none;
+  stroke: red;
+  opacity: 70%;
+  stroke-width: 8px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.trail svg {
+  z-index: 500;
+}
+
+.trail {
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+/* .cursor {
+  background: linear-gradient(to top left, #0062bE, #00A2FE);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -20px 0 0 -20px;
+  pointer-events: auto;
+  mix-blend-mode: multiply;
+  z-index: 10;
+} */
+
+/* li, a, button {
+    cursor: pointer;
+} */
+
+
+
+
+
+
+/* MATILDA STAR ANIMATION */
+/* .shooting-stars {
+    position: absolute;
+    z-index: -10;
+  }
+  .stars1 {
+    color: rgb(245, 245, 171);
+    text-shadow: rgb(190, 190, 232);
+    font-size: 1.4em;
+    letter-spacing: -2px;
+    text-shadow: 2px 2px 20px yellow;
+    opacity: 0.9;
+  }
+  #star1 {
+    position: absolute;
+    top: 0px;
+    right: 10vw;
+    animation: 3.3s shootingStar linear infinite;
+  }
+  #star2 {
+    position: absolute;
+    top: 0px;
+    right: 50vw;
+    animation: 2.7s shootingStar linear infinite;
+  }
+  #star3 {
+    position: absolute;
+    top: -15vh;
+    right: 60vw;
+    animation: 4.2s shootingStar linear infinite;
+    animation-delay: 1.2s;
+  }
+  #star4 {
+    position: absolute;
+    top: -30vh;
+    right: 90vw;
+    animation: 4.3s shootingStar linear infinite;
+    animation-delay: 2s;
+  }
+  #star5 {
+    position: absolute;
+    top: -40vh;
+    right: 30vw;
+    animation: 3s shootingStar linear infinite;
+  }
+  #star6 {
+    position: absolute;
+    top: -3vh;
+    right: -50vw;
+    animation: 3s shootingStar linear infinite;
+    animation-delay: 1.2s;
+  }
+  #star7 {
+    position: absolute;
+    top: -22px;
+    right: -20vw;
+    animation: 2s shootingStar linear infinite;
+    animation-delay: 2.2s;
+  }
+  @keyframes stars-fall {
+    0% {
+      line-height: 5px;
+    }
+    100% {
+      line-height: 10px;
+    }
+  }
+  @keyframes shootingStar {
+    0% {
+      transform: rotateZ(-40deg) translateX(0%) translateY(0%);
+    }
+    100% {
+      transform: rotateZ(-70deg) translateX(-150vw) translateY(50vh);
+    }
+  } */
+
+  .hidden {
+    opacity:0;
+  }
+  .console-container {
+    font-family: Switzer-Variable;
+    font-size:4em;
+    justify-content: center;
+    text-align:center;
+    height:150px;
+    width:500px;
+    display:flex;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    text-decoration: none;
+  }
+
+  .console-underscore {
+     display:inline-block;
+    position:relative;
+    color:white;
+    font-weight: bold;
+    top:-0.14em;
+    left:10px;
+  }
+
+  #text {
+    text-decoration: none;
+    color: white;
+  }
+
+  .landing-body {
+    background-color: black;
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    max-width: 50%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: auto;
+  }
+
+  .content-images {
+    max-width: 60vw;
+    margin: 10px;
+  }
+
+  .content-images:hover {
+    border: solid 6px red;
+    padding: auto;
+    box-shadow: 0 2px 3px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+
+  .reflection-title {
+    padding-top: 1.5rem;
+    font-weight: 600;
+  }
+
+  .reflection-para {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-weight: 400;
+  }
+
+  .body {
+    background-color: black;
+  }
+  
+  /* .wk1-body {
+    background-color: black;
+  } */
+
+
+
