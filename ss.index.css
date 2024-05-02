@@ -64,7 +64,7 @@ body {
 
   padding: 2rem;
 
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(234, 232, 232);
 }
 
 
@@ -74,17 +74,44 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 0.5rem;
+  gap: 1rem;
   font-size: max(16px, 0.75rem);
-  font-style: italic;
+  /* font-style: italic; */
   color: black;
+ 
 }
 
 
 .nav-title {
   font-size: 2.5em;
-  font-family: Sentient-Variable;
+  /* font-family: "Sentient-Variable"; */
+  font-family: "Inconsolata";
+  font-weight: bold;
+  display: block;
+  animation: typing 2s steps(8), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
 }
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/* 
+.weekButton:hover {
+  transform: skew(20deg, 5deg);
+} */
 
 
 .home-section {
@@ -95,12 +122,13 @@ body {
   width: auto;
   background-color: white;
   align-items:center;
-  padding-right: 8%;
+  /* padding-right: 8%; */
 }
 
 .home-graphic-1 {
   max-width: 70%;
 }
+
 
 .made-with-love:hover {
   font-weight: bold;
@@ -135,7 +163,7 @@ svg.trail path {
 }
 
 .trail svg {
-  z-index: 500;
+  z-index: 9900;
 }
 
 .trail {
@@ -245,13 +273,14 @@ svg.trail path {
     opacity:0;
   }
   .console-container {
+    display:flex;
     font-family: Switzer-Variable;
     font-size:4em;
     justify-content: center;
     text-align:center;
+    align-items: center;
     height:150px;
     width:500px;
-    display:flex;
     position:absolute;
     top:0;
     bottom:0;
@@ -282,15 +311,17 @@ svg.trail path {
   .content-container {
     display: flex;
     justify-content: flex-start;
-    flex-direction: row;
-    max-width: 50%;
+    width: 75vw;
   }
 
   .content {
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    padding: 20px;
     margin: auto;
+    padding: 50px;
   }
 
   .content-images {
@@ -298,16 +329,20 @@ svg.trail path {
     margin: 10px;
   }
 
-  .content-images:hover {
+  /* .content-images:hover {
     border: solid 6px red;
     padding: auto;
     box-shadow: 0 2px 3px 4px rgba(0,0,0,0.2);
     cursor: pointer;
-  }
+  } */
 
   .reflection-title {
-    padding-top: 1.5rem;
-    font-weight: 600;
+    font-family: "Inconsolata";
+    padding-top: 2.5rem;
+    padding-bottom: 10px;
+    /* font-weight: bolder; */
+    font-size: 2rem;
+  
   }
 
   .reflection-para {
@@ -324,5 +359,49 @@ svg.trail path {
     background-color: black;
   } */
 
+  .p5links-container{
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    align-items: center;
+    position: absolute;
+  }
 
+  .p5links {
+    font-family: "Inconsolata";
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    font-size: 2.5em;
+    padding-bottom: 40px;
+    z-index: 9999;
+  }
 
+  #week5link {
+    color: white;
+  }
+
+  
+  
+  .p5links:hover {
+    font-weight: bold;
+    color: black;
+  }
+
+  #blob-sketch {
+    position: absolute;
+  }
+
+  #selectedWeek {
+    font-weight: bold;
+    /* color: red; */
+  }
+
+  #week4img {
+    width: 360px;
+  }
+
+  .contentimg {
+    display: flex;
+    flex-direction: row;
+  }
